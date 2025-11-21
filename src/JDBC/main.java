@@ -34,9 +34,9 @@ public class Main {
             stmt.executeUpdate(createTableSQL);
             System.out.println("Table 'departments' created");
 
-            String insertSQL1 = "INSERT INTO departments (department_name) VALUES ('Artificial Intelligence')";
+            String insertSQL1 = "INSERT INTO departments (department_name) VALUES ('Data Science')";
             String insertSQL2 = "INSERT INTO departments (department_name) VALUES ('Cyber Security')";
-            String insertSQL3 = "INSERT INTO departments (department_name) VALUES ('Data Science')";
+            String insertSQL3 = "INSERT INTO departments (department_name) VALUES ('Artificial Intelligence')";
 
             stmt.executeUpdate(insertSQL1);
             stmt.executeUpdate(insertSQL2);
