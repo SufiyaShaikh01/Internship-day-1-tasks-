@@ -1,31 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="1bc20598-33f5-4ee2-a89e-ba53846e7dc5" name="Changes" comment="" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="java-internship" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="java-internship" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
-  <component name="TaskManager">
-    <servers />
-  </component>
+</component>
   <component name="libraryTable">
     <library name="postgresql-42.7.8">
       <CLASSES>
