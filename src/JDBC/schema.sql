@@ -42,29 +42,28 @@ CREATE TABLE marks (
 -- INSERT Queries
 -- departments
 INSERT INTO departments (department_name) VALUES
-('Computer Science'),
-('Mechanical Engineering'),
-('Electrical Engineering'),
-('Civil Engineering'),
-('Electronics'),
+('Chemistry'),
+('Mathematics'),
 ('Information Technology'),
 ('Biotechnology'),
 ('Physics'),
-('Chemistry'),
-('Mathematics');
+('Computer Science'),
+('Mechanical Engineering'),
+('Electrical Engineering'),
+('Civil Engineering');
 
 -- students
 INSERT INTO students (student_name, department_id) VALUES
-('Alice Johnson', 1),
-('Bob Smith', 2),
+('juliet berkin', 1),
+('Boben robert', 2),
 ('Charlie Brown', 3),
-('Diana Prince', 4),
-('Ethan Clark', 5),
+('Diana julies', 4),
+('Eden Clark', 5),
 ('Fiona Adams', 6),
 ('George Miller', 7),
 ('Hannah White', 8),
-('Ian Scott', 9),
-('Julia Roberts', 10);
+('john donems', 9),
+('shimona dsouza', 10);
 
 -- courses
 INSERT INTO courses (course_name, department_id) VALUES
@@ -94,29 +93,29 @@ INSERT INTO faculty (faculty_name, department_id) VALUES
 
 -- attendance
 INSERT INTO attendance (student_id, course_id, date, status) VALUES
-(1, 1, '2024-01-10', 'Present'),
-(2, 2, '2024-01-10', 'Absent'),
-(3, 3, '2024-01-10', 'Present'),
-(4, 4, '2024-01-10', 'Present'),
-(5, 5, '2024-01-10', 'Absent'),
-(6, 6, '2024-01-10', 'Present'),
-(7, 7, '2024-01-10', 'Present'),
-(8, 8, '2024-01-10', 'Absent'),
-(9, 9, '2024-01-10', 'Present'),
-(10, 10, '2024-01-10', 'Present');
+(1, 1, '2025-01-09', 'absent'),
+(2, 2, '2025-01-09', 'present'),
+(3, 3, '2025-01-09', 'Present'),
+(4, 4, '2025-01-09', 'absent'),
+(5, 5, '2025-01-09', 'Absent'),
+(6, 6, '2025-01-09', 'Present'),
+(7, 7, '2025-01-09', 'absent'),
+(8, 8, '2025-01-09', 'present'),
+(9, 9, '2025-01-09', 'Present'),
+(10, 10,'2025-01-09', 'Present');
 
 -- marks
 INSERT INTO marks (student_id, course_id, marks_obtained) VALUES
-(1, 1, 85),
-(2, 2, 78),
-(3, 3, 92),
-(4, 4, 74),
-(5, 5, 88),
-(6, 6, 90),
-(7, 7, 81),
-(8, 8, 69),
-(9, 9, 95),
-(10, 10, 87);
+(1, 1, 80),
+(2, 2, 76),
+(3, 3, 82),
+(4, 4, 84),
+(5, 5, 78),
+(6, 6, 91),
+(7, 7, 87),
+(8, 8, 60),
+(9, 9, 89),
+(10, 10, 67);
 
 
 -- SELECT Queries
