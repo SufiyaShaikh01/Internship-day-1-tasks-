@@ -4,7 +4,7 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Task3CRUD {
+public class Task3CRUD Operations {
     public static void main(String[] args) {
 
         String baseUrl = "jdbc:postgresql://localhost:5432/";
@@ -20,42 +20,30 @@ public class Task3CRUD {
         try {
             Class.forName("org.postgresql.Driver");
 
-
             conn = DriverManager.getConnection(baseUrl + "postgres", user, password);
             System.out.println("\n1.] Connected to postgres database.");
-
-
 
             stmt = conn.createStatement();
             stmt.executeUpdate("CREATE DATABASE " + newDB);
             System.out.println("\n2.] Database '" + newDB + "' created.");
 
-
-
             stmt.close();
             conn.close();
-
 
             conn = DriverManager.getConnection(baseUrl + newDB, user, password);
             System.out.println("\n3.] Connected to temporary database '" + newDB + "'.");
 
-
             String createTable = "CREATE TABLE faculty (faculty_id SERIAL PRIMARY KEY, faculty_name VARCHAR(50), dept_name VARCHAR(100));";
-
 
             stmt = conn.createStatement();
             stmt.executeUpdate(createTable);
             System.out.println("\n4.] Table 'faculty' created.");
-
-
 
             stmt.executeUpdate("INSERT INTO faculty (faculty_name, dept_name) VALUES ('Sufiya Shaikh', 'Computer Science')");
             stmt.executeUpdate("INSERT INTO faculty (faculty_name, dept_name) VALUES ('Hajra khan', 'Computer Applications')");
             stmt.executeUpdate("INSERT INTO faculty (faculty_name, dept_name) VALUES ('fatima Inamdar', 'Business Administration')");
 
             System.out.println("\n5.] Sample data inserted into 'faculty'.\n");
-
-
 
             rs = stmt.executeQuery("SELECT * FROM faculty");
 
@@ -73,17 +61,11 @@ public class Task3CRUD {
 
             System.out.println("------------------------------------");
 
-
-
             stmt.executeUpdate("DROP TABLE faculty");
             System.out.println("\n6.] Table 'faculty' DELETED!");
 
-
-
             stmt.close();
             conn.close();
-
-
 
             conn = DriverManager.getConnection(baseUrl + "postgres", user, password);
             stmt = conn.createStatement();
