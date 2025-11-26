@@ -12,7 +12,7 @@ public class Student extends Person
         System.out.println("Students are doing their internships ");
     }
     public static void main(String[] args) {
-        Student student1 = new Student(1, "Tom Sparrow", 19);
+        Student student1 = new Student(1, "Sufiya Shaikh", 17);
         student1.printDetails();
         student1.work();
     }
