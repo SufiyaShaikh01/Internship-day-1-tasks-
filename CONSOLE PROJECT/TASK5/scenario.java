@@ -1,4 +1,4 @@
-package Collections.Task_5;
+package Task_5;
 
 import java.util.ArrayList;
 import java.util.List;
